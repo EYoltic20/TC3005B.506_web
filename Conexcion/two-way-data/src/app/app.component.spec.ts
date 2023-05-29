@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'two-way-data'`, () => {
+  it(`should have as title 'crud-php-angular'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('two-way-data');
+    expect(app.title).toEqual('crud-php-angular');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('two-way-data app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('crud-php-angular app is running!');
   });
 });
